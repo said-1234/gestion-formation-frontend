@@ -1,0 +1,80 @@
+<div class="nav-header">
+  <a [routerLink]="['/admin']" class="brand-logo">
+    <img src="favicon.ico" />
+    <div class="brand-title">Formation</div>
+  </a>
+  <div class="nav-control">
+    <div
+      [ngClass]="{ 'is-active': hamburgerClass, '': !hamburgerClass }"
+      class="hamburger"
+      (click)="toggleHamburgerClass()"
+    >
+      <span class="line"></span><span class="line"></span
+      ><span class="line"></span>
+    </div>
+  </div>
+
+ <!--  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-6">
+      <ul class="py-2">
+        <li class="my-4">
+          <a routerLink="/admin/users">
+            <i class="ti-user mr-2"></i>
+            <span *ngIf="!hamburgerClass">Users</span>
+          </a>
+        </li>
+        <li class="my-4">
+          <a routerLink="/admin/formations">
+            <i class="ti-desktop mr-2"></i>
+            <span *ngIf="!hamburgerClass">Formations</span>
+          </a>
+        </li>
+        <li class="my-4">
+          <a routerLink="/admin/organisme">
+            <i class="ti-home mr-2"></i>
+            <span *ngIf="!hamburgerClass">Organismes</span>
+          </a>
+        </li>
+        <li class="my-4">
+          <a routerLink="/admin/participants">
+            <i class="ti-user mr-2"></i>
+            <span *ngIf="!hamburgerClass">Particiapnts</span>
+          </a>
+        </li>
+        <li class="my-4">
+          <a routerLink="/admin/formateurs">
+            <i class="ti-briefcase mr-2"></i>
+            <span *ngIf="!hamburgerClass">Formateurs</span>
+          </a>
+        </li>
+        <li class="my-4">
+          <a routerLink="/admin/sessions">
+            <i class="ti-desktop mr-2"></i>
+            <span *ngIf="!hamburgerClass">Sessions</span>
+          </a>
+        </li>
+        <li class="my-4">
+          <a routerLink="/admin/domaines">
+            <i class="ti-book mr-2"></i>
+            <span *ngIf="!hamburgerClass">Domaines</span>
+          </a>
+        </li>
+        <li class="my-4">
+          <a routerLink="/admin/pays">
+            <i class="ti-world mr-2"></i>
+            <span *ngIf="!hamburgerClass">Pays</span>
+          </a>
+        </li>
+        <hr />
+        <li class="my-4">
+          <a routerLink="/admin/parametre">
+            <i class="ti-settings mr-2"></i>
+            <span *ngIf="!hamburgerClass">Paramétre</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-5"></div>
+  </div> -->
+</div>
